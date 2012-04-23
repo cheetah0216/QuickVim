@@ -80,6 +80,9 @@ endif
 " \n toggles the nerdtree
 map <leader>n :NERDTreeToggle<CR>
 
+" Give a shortcut key to NERD Tree
+map <F2> :NERDTreeToggle<CR>
+
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
  
@@ -93,5 +96,4 @@ highlight SpecialKey guifg=#4a4a59
 " buffer
 set hidden
 
-" Give a shortcut key to NERD Tree
-map <F2> :NERDTreeToggle<CR>
+

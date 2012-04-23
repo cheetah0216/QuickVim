@@ -11,6 +11,8 @@ set noswapfile
 syntax enable
 set background=dark
 let g:solarized_termcolors=256
+let g:solarized_termtrans=0
+let g:solarized_visibility="normal"
 colorscheme solarized
 
 " quiet pls
@@ -49,24 +51,6 @@ function! SummarizeTabs()
   endtry
 endfunction
 
-" Only do this part when compiled with support for autocommands
-if has("autocmd")
-  " Enable file type detection
-  filetype on
-   
-  " Syntax of these languages is fussy over tabs Vs spaces
-  autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
-  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-   
-  " Customisations based on house-style (arbitrary)
-  autocmd FileType html setlocal ts=4 sts=4 sw=4 expandtab
-  autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
-   
-  " Treat .rss files as XML
-  autocmd BufNewFile,BufRead *.rss setfiletype xml
- 
-else
 
 " 4 space softabs default
 set expandtab
@@ -74,18 +58,44 @@ set ts=4
 set sts=4
 set sw=4
 
+
+
+" Only do this part when compiled with support for autocommands
+if has("autocmd")
+  " Enable file type detection
+  filetype on
+
+  " Syntax of these languages is fussy over tabs Vs spaces
+  autocmd FileType make       setlocal ts=8 sts=8 sw=8 noexpandtab
+  autocmd FileType yaml       setlocal ts=2 sts=2 sw=2 expandtab
+
+  " Treat .rss files as XML
+  autocmd BufNewFile,BufRead *.rss setfiletype xml
+
+  " Customisations based on house-style (arbitrary)
+  autocmd FileType html       setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType css        setlocal ts=4 sts=4 sw=4 expandtab
+  autocmd FileType javascript setlocal ts=4 sts=4 sw=4 expandtab
+
+  " Treat .rss files as XML
+  autocmd BufNewFile,BufRead *.rss setfiletype xml
+
+else
+
+" Left this in here:
+
 endif
 
 
-" \n toggles the nerdtree
+" \n toggles the nerdtree pinky/index ambidextrous
 map <leader>n :NERDTreeToggle<CR>
 
-" Give a shortcut key to NERD Tree
-map <F2> :NERDTreeToggle<CR>
+" fn + n toggles nerdtree pinky/index ambidextrous
+map n :NERDTreeToggle<CR>
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
- 
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
@@ -95,5 +105,9 @@ highlight SpecialKey guifg=#4a4a59
 
 " buffer
 set hidden
+set list!
+:echo $MYVIMRC
+":source $MYVIMRC
+
 
 

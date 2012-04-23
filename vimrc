@@ -106,8 +106,9 @@ highlight SpecialKey guifg=#4a4a59
 " buffer
 set hidden
 set list!
-":echo $MYVIMRC
-":source $MYVIMRC
+" :echo $MYVIMRC
+" :source $MYVIMRC
+
 
 
 

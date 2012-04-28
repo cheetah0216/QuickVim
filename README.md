@@ -1,7 +1,6 @@
 #quick-vim
 
-**Original Repo here
-**
+Original Repo here
 [https://github.com/brianleroux/quick-vim.git
 ](https://github.com/brianleroux/quick-vim.git)
 

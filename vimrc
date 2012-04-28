@@ -109,7 +109,4 @@ set list!
 " :echo $MYVIMRC
 " :source $MYVIMRC
 
-
 autocmd vimenter * NERDTree
-
-

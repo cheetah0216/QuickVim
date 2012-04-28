@@ -110,5 +110,6 @@ set list!
 " :source $MYVIMRC
 
 
+autocmd vimenter * NERDTree
 
 

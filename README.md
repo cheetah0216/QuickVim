@@ -1,6 +1,7 @@
-# quick-vim
-Original Repo here
+#quick-vim
 
+**Original Repo here
+**
 [https://github.com/brianleroux/quick-vim.git
 ](https://github.com/brianleroux/quick-vim.git)
 
@@ -13,7 +14,8 @@ Original Repo here
         {__   {__{__{__   {___{__  {__          {__    {__{___  {_  {__
         {___                   
                                         
-Portable text exiting for JS devs.
+**Portable text exiting for JS devs.
+**
 
 ## the problem
 
@@ -29,7 +31,7 @@ For years I've found myself trying to make THE ULTIMATE VIM CONFIGURATION. When 
 - no weird bundles that require re-compilation of vim or outside scripting languages
 - bundle config is in a plain text file stored in the root of this directory
 
-<img src="https://github.com/brianleroux/quick-vim/raw/master/screen.jpg" />
+<img src="https://github.com/RandyMcMilla/QuickVim/raw/master/screen.png" />
 
 ## the bundles for me
 

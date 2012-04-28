@@ -1,4 +1,8 @@
 # quick-vim
+Original Repo here
+
+[https://github.com/brianleroux/quick-vim.git
+](https://github.com/brianleroux/quick-vim.git)
 
                               {__                                      
                      {_       {__                       {_             
@@ -37,7 +41,7 @@ If you do need more, you can always fork this repo, create a branch, modify the 
 
 Getting started with `quick-vim` is easy:
 
-    git clone git://github.com/brianleroux/quick-vim.git
+    git@github.com:RandyMcMillan/QuickVim.git
     cd quick-vim
     ./quick-vim install
 

@@ -109,4 +109,8 @@ set list!
 " :echo $MYVIMRC
 " :source $MYVIMRC
 
+if has("gui_running")
+"
+else
 autocmd vimenter * NERDTree
+endif

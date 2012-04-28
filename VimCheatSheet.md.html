@@ -1,0 +1,557 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ol,
+ul,
+li,
+img {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html * {
+  font-family: "ff-din-web-pro-1", "ff-din-web-pro-2", sans-serif;
+  font-size: 16px;
+  line-height: 19.2px;
+  color-profile: sRGB;
+}
+body {
+  min-width: 32em;
+  max-width: 52em;
+  margin: 40px 70px;
+}
+p {
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+strong {
+  font-weight: bold;
+}
+ol,
+ul {
+  margin-left: 2em;
+  margin-bottom: 20px;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 10px;
+}
+li {
+  margin-bottom: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+  text-transform: capitalize;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 24.624px;
+  line-height: 29.548799999999996px;
+}
+h2 {
+  font-size: 24.624px;
+  line-height: 29.548799999999996px;
+}
+h3 {
+  font-size: 23.44px;
+  line-height: 28.128px;
+}
+h4 {
+  font-size: 22.16px;
+  line-height: 26.592px;
+}
+h5 {
+  font-size: 22.16px;
+  line-height: 26.592px;
+}
+h6 {
+  font-size: 22.16px;
+  line-height: 26.592px;
+}
+img {
+  margin-bottom: 20px;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img,
+p img {
+  margin-bottom: 0;
+}
+pre {
+  margin-bottom: 20px;
+}
+pre,
+code {
+  font-family: monospace;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+h2 {
+  border-bottom: 1px solid;
+}
+h3,
+h4,
+h5,
+h6 {
+  border-bottom: none;
+}
+html * {
+  color: #839496;
+}
+html body {
+  background-color: #002b36;
+}
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
+  color: #93a1a1;
+  border-color: #839496;
+}
+html a,
+html a:active,
+html a:visited {
+  color: #93a1a1;
+}
+html a:hover {
+  background-color: #073642;
+}
+html pre {
+  color: #93a1a1;
+  background-color: #073642;
+}
+html a,
+html a:active,
+html a:visited,
+html code.url {
+  color: #b58900;
+}
+html h1 {
+  color: #b58900;
+}
+html h2,
+html h3,
+html h4,
+html h5,
+html h6 {
+  color: #b58900;
+}
+
+</style>
+<title>MY VIM CHEAT SHEET</title>
+</head>
+<body>
+<h1>MY VIM CHEAT SHEET</h1>
+
+<h2>Working with files</h2>
+
+<h4>Vim command Action</h4>
+
+<pre><code>:e filename  
+</code></pre>
+
+<p>Open a new file. You can use the Tab key for automatic file name completion, just like at the shell command prompt.</p>
+
+<pre><code>:w filename
+</code></pre>
+
+<p>Save changes to a file. If you don&rsquo;t specify a file name, Vim saves as the file name you were editing. For saving the file under a different name, specify the file name.</p>
+
+<pre><code>:q  
+</code></pre>
+
+<p>Quit Vim. If you have unsaved changes, Vim refuses to exit.</p>
+
+<pre><code>:q!  
+</code></pre>
+
+<p>Exit Vim without saving changes.</p>
+
+<pre><code>:wq
+</code></pre>
+
+<p>Write the file and exit.</p>
+
+<pre><code>:x
+</code></pre>
+
+<p>Almost the same as :wq</p>
+
+<p>Write the file and exit if you&rsquo;ve made changes to the file. If you haven&rsquo;t made any changes to the file, Vim exits without writing the file.</p>
+
+<h1>Moving around in the file</h1>
+
+<p>These Vim commands and keys work both in command mode and visual mode.</p>
+
+<h4>Vim command Action</h4>
+
+<pre><code>j or Up Arrow   
+</code></pre>
+
+<p>Move the cursor up one line.</p>
+
+<pre><code>k or Down Arrow
+</code></pre>
+
+<p>Down one line.</p>
+
+<pre><code>h or Left Arrow 
+</code></pre>
+
+<p>Left one character.</p>
+
+<pre><code>l or Right Arrow
+</code></pre>
+
+<p>Right one character.</p>
+
+<pre><code>e
+</code></pre>
+
+<p>To the end of a word.</p>
+
+<pre><code>E
+</code></pre>
+
+<p>To the end of a whitespace-delimited word.</p>
+
+<pre><code>b
+</code></pre>
+
+<p>To the beginning of a word.</p>
+
+<pre><code>B
+</code></pre>
+
+<p>To the beginning of a whitespace-delimited word.</p>
+
+<pre><code>0
+</code></pre>
+
+<p>To the beginning of a line.</p>
+
+<pre><code>^
+</code></pre>
+
+<p>To the first non-whitespace character of a line.</p>
+
+<pre><code>$
+</code></pre>
+
+<p>To the end of a line.</p>
+
+<pre><code>H
+</code></pre>
+
+<p>To the first line of the screen.</p>
+
+<pre><code>M
+</code></pre>
+
+<p>To the middle line of the screen.</p>
+
+<pre><code>L
+</code></pre>
+
+<p>To the the last line of the screen.</p>
+
+<pre><code>:n
+</code></pre>
+
+<p>Jump to line number n. For example, to jump to line 42, you&rsquo;d type :42</p>
+
+<h2>Inserting and overwriting text</h2>
+
+<h4>Vim command Action</h4>
+
+<pre><code>i
+</code></pre>
+
+<p>Insert before cursor.</p>
+
+<pre><code>I
+</code></pre>
+
+<p>Insert to the start of the current line.</p>
+
+<pre><code>a
+</code></pre>
+
+<p>Append after cursor.</p>
+
+<pre><code>A
+</code></pre>
+
+<p>Append to the end of the current line.</p>
+
+<pre><code>o
+</code></pre>
+
+<p>Open a new line below and insert.</p>
+
+<pre><code>O
+</code></pre>
+
+<p>Open a new line above and insert.</p>
+
+<pre><code>C
+</code></pre>
+
+<p>Change the rest of the current line.</p>
+
+<pre><code>r
+</code></pre>
+
+<p>Overwrite one character. After overwriting the single character, go back to command mode.</p>
+
+<pre><code>R
+</code></pre>
+
+<p>Enter insert mode but replace characters rather than inserting.</p>
+
+<pre><code>The ESC key
+</code></pre>
+
+<p>Exit insert/overwrite mode and go back to command mode.</p>
+
+<h2>Deleting text</h2>
+
+<h4>Vim command Action</h4>
+
+<pre><code>x
+</code></pre>
+
+<p>Delete characters under the cursor.</p>
+
+<pre><code>X
+</code></pre>
+
+<p>Delete characters before the cursor.</p>
+
+<pre><code>dd or :d
+</code></pre>
+
+<p>Delete the current line.</p>
+
+<h2>Entering visual mode</h2>
+
+<h4>Vim command Action</h4>
+
+<pre><code>v
+</code></pre>
+
+<p>Start highlighting characters. Use the normal movement keys and commands to select text for highlighting.</p>
+
+<pre><code>V
+</code></pre>
+
+<p>Start highlighting lines.</p>
+
+<pre><code>The ESC key
+</code></pre>
+
+<p>Exit visual mode and return to command mode.
+Editing blocks of text</p>
+
+<pre><code>Note: the Vim commands marked with (V) work in visual mode, when you've selected some text. The other commands work in the command mode, when you haven't selected any text.
+</code></pre>
+
+<h4>Vim command Action</h4>
+
+<pre><code>~
+</code></pre>
+
+<p>Change the case of characters. This works both in visual and command mode. In visual mode, change the case of highlighted characters. In command mode, change the case of the character uder cursor.</p>
+
+<pre><code>&gt; (V)
+</code></pre>
+
+<p>Shift right (indent).</p>
+
+<pre><code>&lt; (V)
+</code></pre>
+
+<p>Shift left (de-indent).</p>
+
+<pre><code>c (V)
+</code></pre>
+
+<p>Change the highlighted text.</p>
+
+<pre><code>y (V)
+</code></pre>
+
+<p>Yank the highlighted text. In Windows terms, &ldquo;copy the selected text to clipboard.&rdquo;</p>
+
+<pre><code>d (V)
+</code></pre>
+
+<p>Delete the highlighted text. In Windows terms, &ldquo;cut the selected text to clipboard.&rdquo;</p>
+
+<pre><code>yy or :y or Y
+</code></pre>
+
+<p>Yank the current line. You don&rsquo;t need to highlight it first.</p>
+
+<pre><code>dd or :d
+</code></pre>
+
+<p>Delete the current line. Again, you don&rsquo;t need to highlight it first.</p>
+
+<pre><code>p
+</code></pre>
+
+<p>Put the text you yanked or deleted. In Windows terms, &ldquo;paste the contents of the clipboard&rdquo;. Put characters after the cursor. Put lines below the current line.</p>
+
+<pre><code>P
+</code></pre>
+
+<p>Put characters before the cursor. Put lines above the current line.
+Undo and redo</p>
+
+<h4>Vim command Action</h4>
+
+<pre><code>u
+</code></pre>
+
+<p>Undo the last action.</p>
+
+<pre><code>U
+</code></pre>
+
+<p>Undo all the latest changes that were made to the current line.</p>
+
+<pre><code>Ctrl + r
+</code></pre>
+
+<p>Redo.</p>
+
+<h2>Search</h2>
+
+<h4>Vim command Action</h4>
+
+<pre><code>/pattern
+</code></pre>
+
+<p>Search the file for pattern.</p>
+
+<pre><code>n
+</code></pre>
+
+<p>Scan for next search match in the same direction.</p>
+
+<pre><code>N
+</code></pre>
+
+<p>Scan for next search match but opposite direction.</p>
+
+<h2>Replace</h2>
+
+<h4>Vim command Action</h4>
+
+<pre><code>:rs/foo/bar/a
+</code></pre>
+
+<p>Substitute foo with bar. r determines the range and a determines the arguments.</p>
+
+<p>The range &reg; can be
+nothing Work on current line only.
+number  Work on the line whose number you give.</p>
+
+<pre><code>%
+</code></pre>
+
+<p>The whole file.
+Arguments (a) can be</p>
+
+<pre><code>g
+</code></pre>
+
+<p>Replace all occurrences in the line. Without this, Vim replaces only the first occurrences in each line.</p>
+
+<pre><code>i
+</code></pre>
+
+<p>Ignore case for the search pattern.</p>
+
+<pre><code>I
+</code></pre>
+
+<p>Don&rsquo;t ignore case.</p>
+
+<pre><code>c
+</code></pre>
+
+<p>Confirm each substitution.</p>
+
+<p>You can type y to substitute this match, n to skip this match, a to substitute this and all the remaining matches (&ldquo;Yes to all&rdquo;), and q to quit substitution.</p>
+
+<h2>Examples</h2>
+
+<pre><code>:452s/foo/bar/
+</code></pre>
+
+<p>Replace the first occurrence of the word foo with bar on line number 452.</p>
+
+<pre><code>:s/foo/bar/g
+</code></pre>
+
+<p>Replace every occurrence of the word foo with bar on current line.</p>
+
+<pre><code>:%s/foo/bar/g
+</code></pre>
+
+<p>Replace every occurrence of the word foo with bar in the whole file.</p>
+
+<pre><code>:%s/foo/bar/gi
+</code></pre>
+
+<p>The same as above, but ignore the case of the pattern you want to substitute. This replaces foo, FOO, Foo, and so on.</p>
+
+<pre><code>:%s/foo/bar/gc
+</code></pre>
+
+<p>Confirm every substitution.</p>
+
+<pre><code>:%s/foo/bar/c
+</code></pre>
+
+<p>For each line on the file, replace the first occurrence of foo with bar and confirm every substitution.</p>
+</body>
+</html>

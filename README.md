@@ -31,7 +31,7 @@ For years I've found myself trying to make THE ULTIMATE VIM CONFIGURATION. When 
 - no weird bundles that require re-compilation of vim or outside scripting languages
 - bundle config is in a plain text file stored in the root of this directory
 
-<img src="https://github.com/RandyMcMilla/QuickVim/raw/master/screen.png" />
+<img src="https://github.com/RandyMcMillan/QuickVim/raw/master/screen.png" />
 
 ## the bundles for me
 

@@ -90,8 +90,6 @@ endif
 " \n toggles the nerdtree pinky/index ambidextrous
 map <leader>n :NERDTreeToggle<CR>
 
-" fn + n toggles nerdtree pinky/index ambidextrous
-map n :NERDTreeToggle<CR>
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>

@@ -16,7 +16,7 @@ profile
 *.moved-aside
 
 .DS_Store
-
+.swp
 # Thumbnails
 ._*
 
